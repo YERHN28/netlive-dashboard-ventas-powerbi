@@ -1,4 +1,4 @@
-![Dashboard](dashboard_resumen.png)
+<img src="dashboard_resumen.png" width="100%">
 
 # 📊 Sales & Profitability Dashboard – NETLIVE (Power BI)
 
