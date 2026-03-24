@@ -1,4 +1,6 @@
-# 📊 Dashboard Comercial – NETLIVE
+![Dashboard](dashboard_resumen.png)
+
+# 📊 Sales & Profitability Dashboard – NETLIVE (Power BI)
 
 Este proyecto consiste en el desarrollo de un dashboard interactivo en Power BI para analizar el rendimiento comercial de una empresa de distribución.
 
@@ -25,14 +27,18 @@ Analizar ventas, rentabilidad y desempeño comercial para apoyar la toma de deci
 ### 🔹 Detalle de Producto
 ![Detalle](dashboard_detalle.png)
 
-## 🧠 Insights clave
+## 🧠 Key Insights
 
-- Disminución de ventas en el último trimestre
-- Laptop como producto líder en ingresos
-- Variación de rentabilidad entre regiones
+- Sales show a declining trend in the last quarter
+- Laptop is the top-performing product in revenue and profitability
+- Profitability varies significantly across regions, indicating optimization opportunities
 
 ## 🛠️ Tecnologías
 
 - Power BI
 - DAX
 - Excel
+
+## 💼 Business Value
+
+This dashboard enables decision-making by identifying sales trends, top-performing products, and regional profitability differences, helping optimize commercial strategy.
