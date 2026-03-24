@@ -2,6 +2,8 @@
 
 # 📊 Sales & Profitability Dashboard – NETLIVE (Power BI)
 
+Business Intelligence dashboard focused on sales performance, profitability analysis, and decision-making support.
+
 Este proyecto consiste en el desarrollo de un dashboard interactivo en Power BI para analizar el rendimiento comercial de una empresa de distribución.
 
 ## 🎯 Objetivo
