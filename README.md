@@ -1,53 +1,122 @@
-<img src="dashboard_resumen.png" width="100%">
+# 📊 Sales & Profitability Analysis — Power BI Dashboard
 
-# 📊 Sales & Profitability Dashboard – NETLIVE (Power BI)
+## 📌 Overview
 
-Business Intelligence dashboard focused on sales performance, profitability analysis, and decision-making support.
+This project presents an **interactive Power BI dashboard** focused on sales performance and profitability analysis.
 
-Este proyecto consiste en el desarrollo de un dashboard interactivo en Power BI para analizar el rendimiento comercial de una empresa de distribución.
+It is part of a broader end-to-end analytics workflow:
 
-## 🎯 Objetivo
+- SQL → data cleaning and transformation  
+- Excel → exploratory analysis and KPI development  
+- **Power BI → advanced visualization and business insights**
 
-Analizar ventas, rentabilidad y desempeño comercial para apoyar la toma de decisiones.
+The goal is to support decision-making through dynamic and interactive analysis.
 
-## 🔍 Funcionalidades
+---
 
-- Análisis de ventas y rentabilidad
-- Evaluación por producto, vendedor y región
-- Métricas en DAX (ingresos, margen y crecimiento)
-- Análisis temporal con tabla calendario
-- Drill-through para análisis detallado por producto
+## 🔗 Related Projects
 
-## 📸 Vista del dashboard
+- SQL Data Analysis:  
+👉 https://github.com/YERHN28/netlive-sql-ventas-analysis  
 
-### 🔹 Resumen Ejecutivo
+- Excel Dashboard Analysis:  
+👉 https://github.com/YERHN28/sales-analysis-sql-excel-powerbi  
+
+---
+
+## 🎯 Objective
+
+Analyze sales performance, profitability, and business trends to support strategic decision-making.
+
+---
+
+## 📊 Dashboard Features
+
+- Revenue and profit analysis  
+- Performance by product, region, and salesperson  
+- Time-based analysis using a calendar table  
+- Drill-through functionality for product-level detail  
+- Interactive filters for dynamic exploration  
+
+---
+
+## 🧮 Key Metrics (DAX)
+
+The following measures were developed using DAX:
+
+- Total Revenue  
+- Total Profit  
+- Profit Margin (%)  
+- Sales Growth  
+
+---
+
+## 🧮 DAX Measures
+
+Below are some of the key DAX measures used in the dashboard:
+
+```DAX
+Total Revenue = SUM(Ventas[Total])
+
+Total Profit = SUM(Ventas[Utilidad])
+
+Profit Margin % = 
+DIVIDE([Total Profit], [Total Revenue], 0)
+
+Sales Growth % = 
+DIVIDE(
+    [Total Revenue] - CALCULATE([Total Revenue], PREVIOUSMONTH(Calendario[Fecha])),
+    CALCULATE([Total Revenue], PREVIOUSMONTH(Calendario[Fecha])),
+    0
+)
+```
+
+These measures enable dynamic KPI tracking and time-based performance analysis within the dashboard.
+
+---
+
+## 📸 Dashboard Preview
+
+### 🔹 Executive Summary
 ![Resumen](dashboard_resumen.png)
 
-### 🔹 Análisis Detallado
+### 🔹 Detailed Analysis
 ![Analisis](dashboard_analisis.png)
 
-### 🔹 Detalle de Producto
+### 🔹 Product Detail
 ![Detalle](dashboard_detalle.png)
 
-## 🧠 Key Insights
+---
 
-- Sales show a declining trend in the last quarter
-- Laptop is the top-performing product in revenue and profitability
-- Profitability varies significantly across regions, indicating optimization opportunities
+## 🔍 Key Insights
 
-## 🛠️ Tecnologías
+- Sales show a declining trend in the last quarter, indicating potential seasonal or demand-related factors  
+- Laptop is the top-performing product in both revenue and profitability  
+- Profitability varies significantly across regions, highlighting opportunities for margin optimization  
+- High revenue does not always correlate with high profitability, emphasizing the importance of margin analysis  
 
-- Power BI
-- DAX
-- Excel
+---
 
 ## 💼 Business Value
 
-This dashboard enables decision-making by identifying sales trends, top-performing products, and regional profitability differences, helping optimize commercial strategy.
+This dashboard supports business decision-making by:
+
+- Identifying sales trends and seasonality  
+- Highlighting top-performing products and sales segments  
+- Detecting profitability gaps across regions  
+- Enabling data-driven commercial strategies  
+
+---
+
+## 🛠️ Tools & Technologies
+
+- Power BI  
+- DAX  
+- Excel (data source)  
 
 ---
 
 ## 📌 Author
 
-* Yerson Huaman Noriega
-* Aspiring Data Analyst
+**Yerson Huaman Noriega**  
+Aspiring Data Analyst
