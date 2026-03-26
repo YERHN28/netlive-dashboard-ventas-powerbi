@@ -44,3 +44,10 @@ Analizar ventas, rentabilidad y desempeño comercial para apoyar la toma de deci
 ## 💼 Business Value
 
 This dashboard enables decision-making by identifying sales trends, top-performing products, and regional profitability differences, helping optimize commercial strategy.
+
+---
+
+## 📌 Author
+
+* Yerson Huaman Noriega
+* Aspiring Data Analyst
